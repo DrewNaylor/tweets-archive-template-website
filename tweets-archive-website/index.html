@@ -1,0 +1,234 @@
+---
+title: Tweets archive website template
+description: A sample website to manually archive Tweets. Original template created by Drew Naylor/@DrewNaylor@mastodon.online
+permalink: /tweets-archive-template-website/tweets-archive-website/index.html
+---
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Tweets archive website template</title>
+  </head>
+  <body>
+    <header>{% include archived/archive-page-header.html %}</header>
+    <main>
+      <h1>Tweets archive website template</h1>
+      <p>A description of your Tweets archive website. This could include your Twitter bio too, if you want. <b>Remember to add your profile picture to the archive as "avatar.jpg" next to "index.html" so that the profile picture shows up correctly.</b> If it's not a .jpg, you have to do a find-and-replace on "avatar.jpg" with "avatar.png" (or whatever the extension is for you). Also be sure to read the example posts below so you know how this template works.
+        Template created by
+        <a href="https://mastodon.online/@drewnaylor" target="_blank" rel="noopener">Drew Naylor</a> and the
+        code is under the MIT License. You can
+        <a href="https://github.com/DrewNaylor/tweets-archive-template-website" target="_blank" rel="noopener">fork this repo</a>
+        if you want to create your own Tweets archive website. Please only archive your own Tweets and those you have permission to archive.
+        If you want to, you can put additions to posts that weren't there originally in italics.</p>
+      <br>
+      <br>
+      <div class="posts-list">
+
+      <div class="post">
+        <section id="861988168882630656" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/861988168882630656" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">This is a basic sample post. Most Tweets are probably going to be able to be based off this one. Since this is the post at the top of the page, I'll explain a few things. Be sure to look at the code to know what's going on. So in the code, I have the date link to the original post on Twitter using the Tweet ID that's in the Twitter URL for each Tweet and given to you underneath each Tweet in the backup. I'm also using that ID to allow linking directly to posts from elsewhere on this website by using section IDs which work like HTML anchors, if you're used to that. Try it out by clicking "jump to this post" below, next to the Retweets and Likes area. Please keep the class-related stuff there, as I'm going to make a CSS file that'll make this all look a lot better after archiving all my posts. Note that I'm putting the numbers for Retweets and Likes in code blocks to ensure that, say, zeroes will be easily differentiated from capital O.</span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+        <a href="#861988168882630656">(jump to this post)</a>
+        </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="864587508033748994" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/864587508033748994" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">If you have multiple posts that were immediately Tweeted one after the other and you want them to appear together in the archive, you can...
+          <br>
+          <i>(next post joined in archive as reply; 
+            <a href="https://twitter.com/DrewTNaylor/status/864587716100489221" target="_blank" rel="noopener">
+              link to post</a>)</i>
+          <br>
+          ...use this post as an example for how to do that, but note that if posts other than the original have Retweets or Likes, those aren't handled here as I had neither on the original post this was based on, so you'll have to add that in yourself.</span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#864587508033748994">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="868543244619132929" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/868543244619132929" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">#hashtags and @handles appear as plain text like everything else and aren't links, unless you want them to be by manually linking them somewhere.</span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#868543244619132929">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="868669460172943360" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/868669460172943360" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">Image posts just have images below the post text like Twitter, but there's no built-in code for opening the image when clicked (you can put it in though, if you want; just trying to get my archive done as soon as possible; competent browsers like Firefox do allow you to right-click and click "Open image in new tab", give or take a few wording changes). I try to just have the image size be large enough to see whatever I want to be shown (Twitter's image preview is 497 on the width based on what the backup website's image elements told me with Inspect Element), then it can be zoomed in more if desired. I also include alt text with images.</span>
+          <br>
+          <span class="post-image">
+            <img src="./post-images/sample-image.jpg"
+            alt="See? I use alt text. The image is just the words &quot;sample image&quot; written in cursive in black on a white background."
+            width="497" height="279"/>
+          </span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#868669460172943360">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="874372827687858181" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/874372827687858181" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">This post will be linked to by a post further down as an example of an archived version of quote-Retweeting yourself.</span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#874372827687858181">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="875510607704993793" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/875510607704993793" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">You can have links appear in archived Tweets like so. This one has been left as-is from my original post, so enjoy an article on supporting Net Neutrality.
+          <br>
+          <br>
+          <a href="https://arstechnica.com/tech-policy/2017/06/netflix-re-joins-fight-to-save-net-neutrality-rules/" target="_blank" rel="noopener">
+            Netflix joins Amazon and Reddit in Day of Action to save net neutrality - Ars Technica
+          </a></span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#875510607704993793">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="987116685135147008" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/987116685135147008" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">Sometimes you might need to have more than one image in a post, and this is an example of that case.</span>
+          <br>
+          <span class="post-image">
+            <img src="./post-images/multi-image-post-image-sample-1.jpg"
+            alt="&quot;post image sample 1&quot; written in cursive in black on a white background."/>
+          </span>
+          <br>
+          <span class="post-image">
+            <img src="./post-images/multi-image-post-image-sample-2.jpg"
+            alt="&quot;post image sample 2&quot; written in cursive in black on a white background."/>
+          </span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#987116685135147008">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="993474202777931776" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/993474202777931776" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">Sometimes you might've quote-Retweeted something but the original post is gone now so you can't
+        even write what the original post was about. You can do what I did here in the italics below, if you want.
+          <br>
+          <i>(link to something I quote-retweeted but is no longer available so I have no idea what it said)</i></span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#993474202777931776">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="1005136814989070336" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/1005136814989070336" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">Sometimes you might quote-Retweet yourself, so you can do this to preserve the experience mostly:
+          <br>
+          <br>
+          <i>pretend this is a quote-retweet of a previous post I made; <a href="#874372827687858181">jump to original post</a></i></span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#1005136814989070336">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+      <div class="post">
+        <section id="1042268495931682816" class="post-content">
+        <p><img src="avatar.jpg" width="48" height="48" alt="profile picture" class="avatar" />
+          &nbsp;&nbsp;&nbsp;<b><span class="display-name">Display name here</span></b> <span class="username-and-date">@YourHandleHere &bull;
+          <a href="https://twitter.com/DrewTNaylor/status/1042268495931682816" target="_blank" rel="noopener">Original post date here</a></span>
+        <br>
+        <span class="post-text">There may be times when you want to archive a bunch more than just what was in a Tweet, like my Facebook post linked here. I'll replace the details with a short example text. Note that the link is about the death of the cat I loved the most, if you're not up for that right now. The text in the details is just sample text.
+          <br>
+          <br>
+          <a href="https://www.facebook.com/drewnaylormicroblogging/photos/a.1059958697367396/2217421481621106/" target="_blank" rel="noopener">
+            <i>(link to my Facebook page explaining my absense; unrelated example text is below)</i>
+          </a>
+          <br>
+          <br>
+          <details>
+            <summary>Click to view the full example text.</summary>
+          Example of a lot of text. Example of a lot of text. Example of a lot of text.
+          Example of a lot of text. Example of a lot of text. Example of a lot of text.
+          Example of a lot of text. Example of a lot of text. Example of a lot of text.
+          Example of a lot of text. Example of a lot of text. Example of a lot of text.
+          Example of a lot of text. Example of a lot of text. Example of a lot of text.
+          <br>
+          <br>
+          Another paragraph and so on. Another paragraph and so on. Another paragraph and so on.
+          Another paragraph and so on. Another paragraph and so on. Another paragraph and so on.
+          Another paragraph and so on. Another paragraph and so on. Another paragraph and so on.
+          Another paragraph and so on. Another paragraph and so on. Another paragraph and so on.
+          </details>
+          </span>
+          <br>
+          <span class="post-image">
+            <img src="./post-images/42157361_2217421484954439_6188621241549586432_n.jpg" 
+            alt="Mitty on the top of the drier. She's a beautiful long-haired Calico cat
+            with green eyes. I miss her every day." width="504"/>
+          </span>
+        <br><br>
+        <span class="retweets-and-likes">Retweets: <code>0</code> Likes: <code>0</code></span> <span class="permalink-on-page">
+          <a href="#1042268495931682816">(jump to this post)</a>
+          </span></p>
+        </section>
+      </div>
+
+    </div>
+    </main>
+    <footer>
+      {% include archived/archive-footer-tweets-archive-website.html %}
+    </footer>
+  </body>
+</html>
